@@ -1,0 +1,12 @@
+<div class="regform">
+<h3>Регистрация</h3>
+<div class="regdiv">
+<form action="http://neagent.by/board/saveuser" method="POST">
+<label>Email</label> <input name="email" class="inp" > <br style="clear:both;">
+<label>Пароль</label><input  type="password"  name="pass" class="inp" > <br style="clear:both;">
+<input type="submit" class="subm" value="Сохранить"><br style="clear:both;">
+</form>
+</div>
+<a href="http://neagent.by/board/loginuser" class="loginlink">Войти<span>→</span></a>
+</div>
+

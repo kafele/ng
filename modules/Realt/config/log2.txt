@@ -1,0 +1,1 @@
+Column 'ad_id' cannot be null INSERT INTO `realt_phones_views` (`ad_id`, `cat_id`, `date`, `user_id`) VALUES (NULL, 0, '2014-06-27 20:19:19', 0)

@@ -1,0 +1,31 @@
+<div class="region">
+				<div class="h2">
+					<div class=" "></div><span>Выберите город:</span></div>
+					<div class=" ">
+                		<ul>
+								<li><div class=""></div><a href="http://neagent.by/board/regions/1">Минск</a> <span class="blue"></span>
+									
+								</li>
+								<li><div class=""></div><a href="http://neagent.by/board/regions/2">Витебск</a> <span class="blue"></span>
+									
+								</li>
+								<li><div class=""></div><a href="http://neagent.by/board/regions/3">Гомель</a> <span class="blue"></span>
+									
+								</li>
+			
+						</ul>
+						<ul>
+								<li><div class=""></div><a href="http://neagent.by/board/regions/4">Гродно</a> <span class="blue"></span>
+									
+								</li>
+
+								<li><div class=""></div><a href="http://neagent.by/board/regions/5">Брест</a> <span class="blue"></span>
+									
+								</li>
+								<li><div class=""></div><a href="http://neagent.by/board/regions/6">Могилев</a> <span class="blue"></span>
+									
+								</li>
+								 
+						</ul>
+					</div>
+</div>

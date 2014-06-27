@@ -1,0 +1,108 @@
+﻿<?
+	if ($ad_currency==1){$ad_currency="руб.";};
+	if ($ad_currency==2){$ad_currency="$";};	
+	if ($ad_currency==3){$ad_currency="€";};	
+	if (!$ad_currency){$ad_currency="$";};	
+  if ($ad_isup){
+$up_select_class=" up";
+}  
+ if (strlen($ad_price)>4) {
+ $ad_price = substr($ad_price, 0, strlen($ad_price)-3)  . " "  .  substr($ad_price, strlen($ad_price)-3 , 3);
+ }
+ if (strlen($ad_price)>7) {
+ $ad_price = substr($ad_price, 0, strlen($ad_price)-7)  . " "  .  substr($ad_price, strlen($ad_price)-7 , 7);
+ }
+ 
+ 
+  if (($ad_mainpic)="http://neagent.by/modules/Realt/files/"){
+ $ad_mainpic="0:/www/neagent.by/themes/neagent_style/assets/images/sutki_no_photo.jpg";
+ }
+?>
+ 
+
+
+
+<TABLE class="nn nnalt"  width="100%" align="left"  id="n<?=$sutki_id;?>"  style="clear:both;">
+ 
+<TR>
+<td>
+
+
+<TABLE  class= "nnhead" width="100%"  >
+ 	<td  width="65" height="60" style="padding-top:2px; padding-left:5px;"> 
+	 <?=$sutki_firstpic;?>
+	</td>
+
+	<td  width="110" valign="top" style="width:110px; padding-left:9px;   padding-top:2px;" > 
+		<table class="pricetable" cellpadding=0 border=0 cellspacing=0  >
+		<tr><td  class="ntype" nowrap><?=$sutki_komnat;?></td><td class="nprice0" nowrap><?=$sutki_price;?> <?=$ad_currency?> в сутки</td><td class="ncl">&nbsp;</td></tr>
+		</table>
+		
+		<ul >
+		
+		
+		
+		
+		
+ 		</ul>
+	</td>
+
+	<td    > 
+		<div class="nndate" >
+		<?=$sutki_date;?>
+		
+		
+		
+		</div> 
+ 
+		<h1 ><a href="default.asp?sutki_id=<?=$sutki_id;?>" title = "<?=$sutki_title;?>"><?=$sutki_title;?></a> </h1>
+	</td>
+</tr>
+</table>
+
+</td></tr>
+
+
+<tr><td  class="nncontent" > <span   >  <?=$sutki_message;?> </span> 
+<span class="nntel" >
+
+<noindex><?=$sutki_contactname;?></noindex>
+
+<noindex> <?=$sutki_phones;?>
+
+</noindex>
+
+ </span> </td> </tr>
+ 
+ 
+ 
+<tr> <td   class="nnopt"  style="padding-left:60px;">
+
+
+
+
+
+<!-- жалуемся на вопрос 
+<div class="abuse"><a id="aid< %=strAdId% >"  onclick="return showComplaintReason(this);" href="complaint.asp?action=abuse&aid=< %=strAdId% >" class="poo serv95" ><noindex>сообщить&nbsp;о&nbsp;нарушении!</noindex></a></div>
+ прекратили жаловаться на вопрос -->
+ 
+
+
+ 
+ 
+
+
+
+
+
+
+
+</td></tr>
+
+</table>
+
+
+
+
+
+
