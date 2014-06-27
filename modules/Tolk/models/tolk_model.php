@@ -43,10 +43,10 @@ $this->setPaginationConfig();
 $this->saveClientInfoToLog(); // записали в длог 
 
 
-
+$allresults=isset($allresults)?$allresults:100;
 
 $config['uri_segment']=0;
-
+$config['per_page']=isset($config['per_page'])?$config['per_page']:10;
 
 $firstad=(int)($CI->uri->segment($config['uri_segment'])+1);
 $lastad=$firstad+	$config['per_page']-1;
