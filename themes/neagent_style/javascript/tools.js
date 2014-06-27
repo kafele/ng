@@ -1,7 +1,7 @@
 ﻿  var timeAjaxWite;
  var isloading = false;
  var thisajax;
-qsPath="http://wa.by/qs";
+qsPath="http://-wa.by/qs";
 getareaPath="http://neagent.by/realt/getarea"
   
   searchQuickObjectsAjaxPath = '';

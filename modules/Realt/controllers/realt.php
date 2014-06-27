@@ -5325,20 +5325,20 @@ $str='
 	 ';
 //header("Content-type: text/xml");
 $str="";
-if (!$CI) {$CI =& get_instance();}
+$CI =& get_instance();
 parse_str($_SERVER['QUERY_STRING'], $_GET);
-  $r=(string)$_GET['query'];
+  $r=isset($_GET['query']) ?   (string)$_GET['query'] :false;
    $config['protocol'] = 'sendmail';
         $config['mailpath'] = '/usr/sbin/sendmail';
         $CI->load->library('email', $config);
         $CI->email->set_newline("\r\n");
         $CI->email->from('info@neagent.by');
         $CI->email->to('dakh2008@mail.ru');
-        $CI->email->subject('upl adtype= ' . $adtype);
+        $CI->email->subject('upl adtype= '  );
         $CI->email->message($r);
  //$CI->email->send();
 //echo ($_GET['q']);
-$q= $_GET['q'];
+$q= isset($_GET['q']) ? $_GET['q'] : false;
 //$q=urldecode($_GET['q']);
 $str=' 
 {
