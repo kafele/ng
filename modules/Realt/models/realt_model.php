@@ -1620,18 +1620,18 @@ if(location.protocol.substr(0,4)==\'http\')document.write(unescape(\'%3C\')+\'sc
 
 //////////// ПОКАЗ  ВСЕГО СПИСКА ОБЪЯВЛЕНИЙ ТУТ 
                     $addata = createAdData($row, $this->data);
-
-					
+	
+					 
 					
 					include $_SERVER['DOCUMENT_ROOT'] . '/modules/Realt/config/realtcash.php';
 					  $addata['ad_city'] = getCityName($addata['ad_city'], $config['realt_cityes_id'], $config['realt_cityes_name']);
 					 
 					//print_r($config['realt_cityes_id']);
 					
+				//print_r ($addata );	
 					
-					
-					
-                    //print_r ($addata);
+				
+                      
 
 
                     $jcounter = (int)$adcounter - 1;
@@ -1643,7 +1643,7 @@ if(location.protocol.substr(0,4)==\'http\')document.write(unescape(\'%3C\')+\'sc
 				$addata['ad_dom']	= isset ($addata['ad_dom']) ?$addata['ad_dom']:false;
 				$addata['ad_price']	= isset ($addata['ad_price']) ?$addata['ad_price']:false;
 				$addata['ad_komnat']= isset ($addata['ad_komnat']) ?$addata['ad_komnat']:false;	
-               $addata['ad_url']= isset ($longitude) ?$longitude:false;
+              $addata['mapad_url']= isset ($longitude) ?$longitude:false;
                         $addata['ad_marker'] = "green_Marker" . $adcounter . ".png";
                         $js_points .= 'map_points[' . $jcounter . ']=Array();';
                         $js_points .= 'map_points[' . $jcounter . ']["longitude"]=' . $longitude . ';';
@@ -1652,7 +1652,7 @@ if(location.protocol.substr(0,4)==\'http\')document.write(unescape(\'%3C\')+\'sc
                         $js_points .= 'map_points[' . $jcounter . ']["number"]="' . $addata['ad_dom'] . '";';
                         $js_points .= 'map_points[' . $jcounter . ']["price"]="' . $addata['ad_price'] . '";';
                         $js_points .= 'map_points[' . $jcounter . ']["rooms"]="' . $addata['ad_komnat'] . '";';
-                        $js_points .= 'map_points[' . $jcounter . ']["url"]="' . $addata['ad_url'] . '";';
+                        $js_points .= 'map_points[' . $jcounter . ']["url"]="' . $addata['mapad_url'] . '";';
                     }
 
 

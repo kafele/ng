@@ -13,6 +13,10 @@ if  (obj.value>0){
   <? } ?>
 <?
 
+   
+echo ($ad_url);
+   
+
 
 $labelmark = isset($labelmark)?$labelmark:"";
 $up_select_class= isset($up_select_class)?$up_select_class:false;
