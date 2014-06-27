@@ -14,7 +14,7 @@ if  (obj.value>0){
 <?
 
    
-echo ($ad_url);
+ 
    
 
 
