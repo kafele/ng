@@ -1,0 +1,166 @@
+#rightmenu{
+   position:relative;
+}
+#rightmenu li {
+clear:both;
+height:30px !important;
+position:relative; padding-left:0; margin-left:0;
+}
+
+
+#rightmenu li a.menuitem1  {
+	display: block;
+	background:url("../images/menu_kvart.png") no-repeat 0px 0px;
+	height: 22px;
+	width: 117px;
+	margin-left: 0px;
+	text-indent: -9999px;
+	margin-bottom: 8px;position:relative;
+	}
+	
+#rightmenu li a.menuitem1:hover{background:url("../images/menu_kvart.png") no-repeat 0px -22px;}
+
+
+
+#rightmenu li a.menuitem2  {
+	display: block;
+	background:url("../images/menu_kom.png") no-repeat 0px 0px;
+	height: 22px;
+	width: 117px;
+	margin-left: 0px;
+	text-indent: -9999px;
+	margin-bottom: 8px;position:relative;
+	}
+	
+#rightmenu li a.menuitem2:hover{background:url("../images/menu_kom.png") no-repeat 0px -22px;}
+
+
+#rightmenu li a.menuitem3  {
+	display: block;
+	background:url("../images/menu_dom.png") no-repeat 0px 0px;
+	height: 22px;
+	width: 117px;
+	margin-left: 0px;
+	text-indent: -9999px;
+	margin-bottom: 8px;position:relative;
+	}
+	
+#rightmenu li a.menuitem3:hover{background:url("../images/menu_dom.png") no-repeat 0px -22px;}
+
+
+
+#rightmenu li a.menuitem4  {
+	display: block;
+	background:url("../images/menu_of.png") no-repeat 0px 0px;
+	height: 22px;
+	width: 117px;
+	margin-left: 0px;
+	text-indent: -9999px;
+	margin-bottom: 8px;position:relative;
+	}
+	
+#rightmenu li a.menuitem4:hover{background:url("../images/menu_of.png") no-repeat 0px -22px;}
+
+
+
+
+#rightmenu li a.subitem1  {
+	display: block;
+	 float:left;
+	background:url("../images/menu_sdam.png") no-repeat 0px 0px;
+	height: 22px;
+	width: 59px;
+	margin-left: 0px;padding-left: 0px;
+	text-indent: -9999px;
+	margin-bottom: 8px;
+	overflow: visible;
+	position:relative; 
+	
+	} 
+	
+#rightmenu li a.subitem1:hover{background:url("../images/menu_sdam.png") no-repeat 0px -22px;}
+
+
+
+#rightmenu li a.subitem2  {
+	display: block;
+	 float:left;
+	background:url("../images/menu_snimu.png") no-repeat 0px 0px;
+	height: 22px;
+	width: 76px;
+	margin-left: 0px;
+	text-indent: -9999px;
+	margin-bottom: 8px;
+	position:relative;
+	}
+	
+#rightmenu li a.subitem2:hover{background:url("../images/menu_snimu.png") no-repeat 0px -22px;}
+
+span.sdam, span.snimu{
+font-size:1px;
+display: block; float:left;
+}
+
+ 
+
+
+
+#rightmenu li a.subitem3  {
+	display: block;
+	 clear:left;
+	background:url("../images/menu_podselenie.png") no-repeat 0px 0px;
+	height: 22px;
+	width: 135px;
+	margin-left: 0px;
+	text-indent: -9999px;
+	margin-bottom: 8px;
+	position:relative;
+	}
+	
+#rightmenu li a.subitem3:hover{background:url("../images/menu_podselenie.png") no-repeat 0px -22px;}
+
+span.sdam, span.snimu{
+font-size:1px;
+display: block; float:left;
+}
+
+#rightmenu li a.subitem4  {
+	display: block;
+	 clear:left;
+	background:url("../images/menu_podselus.png") no-repeat 0px 0px;
+	height: 22px;
+	width: 135px;
+	margin-left: 0px;
+	text-indent: -9999px;
+	margin-bottom: 8px;
+	position:relative;
+	}
+	
+#rightmenu li a.subitem4:hover{background:url("../images/menu_podselus.png") no-repeat 0px -22px;}
+
+span.sdam, span.snimu{
+font-size:1px;
+display: block; float:left;
+}
+
+
+
+
+#rightmenu li a.subitem5  {
+	display: block;
+	 clear:left;
+	background:url("../images/menu_sutki.png") no-repeat 0px 0px;
+	height: 22px;
+	width: 135px;
+	margin-left: 0px;
+	text-indent: -9999px;
+	margin-bottom: 8px;
+	position:relative;
+	}
+	
+#rightmenu li a.subitem5:hover{background:url("../images/menu_sutki.png") no-repeat 0px -22px;}
+
+span.sdam, span.snimu{
+font-size:1px;
+display: block; float:left;
+}

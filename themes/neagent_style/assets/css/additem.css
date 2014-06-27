@@ -1,0 +1,160 @@
+﻿#additem .content { margin: 0px 0px 48px 0px; width: 100%}
+/******** additem form *********/
+#form_item{float:left}
+    #form_item fieldset {position:relative;min-height:29px}
+        #form_item fieldset big {color:#333;font-size: 14px}
+        #form_item .checks label {width:auto;font-weight:normal}
+        #form_item .checks label.rad {width:120px}
+    #form_item .inputText {width:220px}
+    #form_item .inputStext {width:80px}
+    #form_item .red {color:#F00;position:absolute;top:6px; left:-10px;font-size:18px}
+    #form_item .long input, #form_item .long textarea {width:333px; font: 14px Arial, sans-serif}
+    #form_item .long textarea {height:120px}
+    #0000form_item select {width:224px}
+    #form_item .params {float:left;clear:none;padding:0;width:520px}
+        #form_item .params .selectParam {float:left;width:230px;overflow:hidden;clear:none;padding: 0}
+        #form_item .params .selectParam .error {padding:0;margin:0 0 4px 0;height:12px;min-height: 0}
+    #form_item .images {
+        overflow:hidden;
+        height:148px;
+        margin: 10px 0 15px 0px;
+        padding:0
+        }
+        #form_item .images div {
+            float:left;
+            position:relative;
+            margin:0 10px 3px 0;
+            text-align:center;
+            width:103px;
+            height:103px;
+            border:1px solid #c3c3c3;
+            padding:1px;
+            clear:none
+            }
+            #form_item .images a {
+                padding:0 0 0 16px;
+                background:url(util0000.gif) 0 -313px no-repeat;
+                text-decoration:none;
+                cursor: pointer;
+                position:absolute;
+                left:15px;
+                bottom:-22px
+                }
+                #form_item .images a:hover {
+                    background-position:0 -47px
+                    }
+                #form_item .images a span {
+                    padding-bottom:0px;
+                    border-bottom: 1px dotted #0F579F
+                    }
+            #form_item .images table {height: 108px;width:100px}
+            #form_item .images td {vertical-align: middle}
+            #form_item .images div img {
+                display:block;
+                margin: 0 auto
+                }
+/******** additem description *********/
+.content dl {
+    font-size:13px;
+    clear:left;
+    margin-bottom:10px;
+    overflow:hidden
+    }
+    .content dt {
+        float:left;
+        font-weight:bold;
+        color:black;
+        width:190px
+        }
+    .content dd i {color:#F00}
+        .content dd div {
+            float: left;
+            height:75px;
+            width:100px;
+            margin:0 15px 3px 0;
+            padding:1px;
+            position:relative;
+            text-align:center;
+            border:1px solid #C3C3C3
+            }
+            .content dd div table {
+                height:75px;
+                width:100px
+                }
+                .content dd div table td  {
+                    vertical-align:middle
+                    }
+                    .content dd.description {
+                        background:none repeat scroll 0 0 #F7F7FA;
+                        padding:6px 10px;
+                        margin: 0 0 10px 0;
+                        float:left;
+                        width:774px
+                        }
+#right_price {
+    padding:4px 0 0 20px;
+    margin-left: 320px;
+    background: url(tip00000.gif) no-repeat 0 50%;
+    color: #808080;
+    display: inline-block;
+    float: left;
+    position: absolute;
+    left:0
+    }
+.form li {
+    padding-top:6px;
+    clear:both;
+    list-style-type: none !important;
+    overflow:visible;    
+    position:relative
+    }
+.image_loader {
+    display: block;
+    height:16px;
+    width:16px;
+    border:1px solid #C3C3C3;
+    padding: 23px 33px;
+    margin-right: 15px;
+    float: left
+    }
+#f_images {overflow:hidden;height:29px}
+#additem .item-table {
+    margin: 0 0 15px
+    }
+    #additem .item-table div {padding: 0}
+    #additem .item-table .odd h3 i {
+        background-color: #F7F7FA
+        }
+#additem .paras {
+    float: left;
+    overflow: hidden;
+    width:500px;
+    margin: 0 0 10px
+    }
+    #additem .paras div {
+        float:left;
+        height:20px;
+        margin: 0 10px 0 0;
+        width:230px;
+        border: none;
+        white-space:nowrap;
+        text-align: left
+        }
+p span {padding: 0}
+.aj span {color:#0F579F}
+#additem .item-table .photo {
+    width:113px
+    }
+#additem #overlay_service .contentWrap  {
+    width:800px;
+    overflow: hidden
+    }
+#overlay_service {
+    width:843px
+    }
+#additem .popUp p {
+    font-family: Verdana, sans-serif
+    }
+#f_metro_id {top:0;left: 0;position: absolute;margin: 0 0 0 410px}
+#form_item div.selectParam:nth-child(7) {clear:left}
+#additem .item-table {font:12px/1.4 Verdana,sans-serif}

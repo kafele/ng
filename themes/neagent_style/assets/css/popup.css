@@ -1,0 +1,157 @@
+.advCommonArea .description {padding: 0 28px 0 14px;}
+.advCommonArea p {font: 10.5pt/1.7em Arial;	padding: 0 0 0 0;}
+
+.popup {
+	z-index: 1000;
+	position: absolute;
+	min-height: 26px;
+	//height: 26px;	
+	text-align: left;
+	sdisplay: inline;
+	width: 200px;
+	top: -1000em;
+	left: -1000em;
+}
+
+.popup .c {
+	position: relative;
+	z-index: 1002;
+	margin: 0 0 -13px 0;
+	padding: 13px;	
+	width: '100%';
+}
+
+.popup .ic {
+	position: relative;
+	width: '100%';
+}
+
+.popup .t,
+.popup .b {
+	position: absolute;
+	display: block;
+	z-index: 1001;
+	top: 0;
+	//top: auto;
+	bottom: 0px;
+	bottom: expression((this.parentNode.offsetHeight%2) ? '-2px' : '-1px');
+	left: 0;
+	right: 13px;
+	overflow: hidden;
+	//width: 100%;
+	//height: 100%;
+}
+
+.popup .b {
+	top: auto;
+	bottom: -13px;
+	bottom: expression((this.parentNode.offsetHeight%2) ? '-14px' : '-13px');	
+	height: 13px;
+}
+
+.popup .r {
+	left: auto;
+	//dleft: -13px;
+	right: 0;
+	//margin-left: 100%;
+	width: 13px;
+}
+
+.popup .t * ,
+.popup .b * {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 110%;
+	height: 110%;
+	background: url(bg_popup.png) 0 0 no-repeat;
+	behavior: url("png.htc");
+}
+
+.popup .t * {
+	margin-top: -13px;
+}
+
+.popup .l * {
+	//width: 100%;
+	margin-left: -13px;
+}
+
+
+.popupClose {
+	float: right;
+	display: inline;
+}
+
+.popupClose a,
+.popupClose a:hover {
+	font: 8pt/1.2em Arial;
+	color: #999999;	
+	display: block;
+	background: url(p_close.gif) 100% 1px no-repeat;
+	padding: 0 19px 0 0;
+}
+
+.popupRegion {
+	padding: 5px 5px 5px 5px;
+	zoom:1;
+}
+
+ 
+.wrPopubMap{ position:relative;}
+.wrPopubMap .popup { left:0px;top:0px;  *top:0px; _top:0px;width:648px;height:570px;}
+.wrPopubMap .popup iframe {
+	opacity:1;
+	background: transparent;
+	border:none;
+	display:block;/*sorry for IE5*/
+	position:static;/*must have*/
+	z-index:1;/*must have*/
+	width:600px;/*must have for any big value*/
+	height:500px;/*must have for any big value*/;
+    top:-5px;
+    left:7px;
+} 
+.advCommonArea .wrPopubMap .popup .info {width:600px; height:500px;position:relative; padding:0;}
+.wrPopubMap .selectControl{padding:15px 0 15px 5px;}
+ 
+.popup {
+	overflow:hidden;
+	overflow: expression('visible');
+}
+
+.popup .c {
+	margin-bottom: 0px	
+}
+
+.popup .t {
+	margin-bottom: 13px;
+	margin-bottom: expression("14px");
+}
+.popup .b {
+	bottom:0px	
+}
+
+.popup .c {
+	padding-top: expression("0px");
+}
+
+.popup iframe {
+	opacity: 0;
+	background: transparent;
+	border:none;
+	display:none;/*sorry for IE5*/
+	display/**/:block;/*sorry for IE5*/
+	position:absolute;/*must have*/
+	top:0;/*must have*/
+	left:0;/*must have*/
+	z-index:-1;/*must have*/
+	filter:mask();/*must have*/
+	width:3000px;/*must have for any big value*/
+	height:3000px/*must have for any big value*/;
+	width: expression(this.parentNode.offsetWidth+0+"px");
+	top: expression("-15px");
+	height: expression(this.parentNode.offsetHeight+20+"px");
+} 
+
