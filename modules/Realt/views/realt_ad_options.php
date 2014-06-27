@@ -1,6 +1,7 @@
 ﻿<!-- view: realt/views/realt_ad_options -->
 
 <?
+$user_id=isset($user_id)?$user_id:0;
 //if (!$CI){$CI =& get_instance();$CI->load->library('parser');}	
 
 		

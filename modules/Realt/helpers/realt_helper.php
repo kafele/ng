@@ -1473,12 +1473,10 @@ if (!function_exists('getAdComments')) {
                 }
 
 
-                if ($ad_email == $email) {
-                    $isautor = 1;
-                }
 
+$isautor =($ad_email == $email)?1:0; 
 
-                $val = array('text' => $text, 'date' => $date, 'id' => $id, 'comment_user' => $comment_user, 'show' => $show, 'screen_name' => $screen_name, isautor => $isautor);
+                $val = array('text' => $text, 'date' => $date, 'id' => $id, 'comment_user' => $comment_user, 'show' => $show, 'screen_name' => $screen_name, 'isautor' => $isautor);
 
                 array_push($comments, $val);
                 $i++;

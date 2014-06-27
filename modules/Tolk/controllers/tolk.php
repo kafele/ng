@@ -102,7 +102,7 @@ $this->load->view('tolk_ad', $addata );
 	function delete($messageID){
 	
 	
-if (!$CI){$CI =& get_instance(); }	
+ $CI =& get_instance();  	
 $user = $CI->connect->get_current_user();
 		if (($user['group']['group_name'])=='Super Admins'){
 		$mlev=4;

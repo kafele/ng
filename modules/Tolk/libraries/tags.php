@@ -75,14 +75,17 @@ $CI->tolk_model->getPage(); // Страница нормальная
  
  
 $data=$CI->tolk_model->data;
-
+$data['meta_title'] = isset($data['meta_title'])?$data['meta_title']:0;
 if ($data['meta_title']){$tag->locals->page['meta_title']=$data['meta_title'];}
 else{
 $tag->locals->page['meta_title']="Tolk Neagent.by.";//$data['NAME'];
 }
+$data['NAME']=isset($data['NAME'])?$data['NAME']:"";
 $tag->locals->page['meta_keywords']=$data['NAME'];
 
 $tag->locals->page['meta_description']=$data['NAME'];
+
+$data['meta_description'] = isset($data['meta_description'])?$data['meta_description']:"";
 if ($data['meta_description']){$tag->locals->page['meta_description']=$data['meta_description'];}
 
 return;

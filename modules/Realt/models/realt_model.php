@@ -2359,6 +2359,9 @@ $ad_show = isset($params['ad_show'])?$params['ad_show']:null;
 	
     public function getAddFormPage()
     {
+	error_reporting (0);
+	
+	
 //работа с отправкой объявления
 $CI =& get_instance();
  $CI->load->library('parser'); 

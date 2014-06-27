@@ -39,7 +39,11 @@
 
 
 
+<?
+$tolk_cat = isset($tolk_cat)?$tolk_cat:0;
 
+
+?>
 
 
 

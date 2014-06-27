@@ -2409,10 +2409,10 @@ end sub
 
     function comment_delete($comment_id)
     {
-        if (!$CI) {
+         
             $CI =& get_instance();
             $CI->load->library('parser');
-        }
+         
         $user = $CI->connect->get_current_user();
         if (($user['group']['group_name']) == 'Super Admins') {
             $mlev = 4;
@@ -3449,7 +3449,7 @@ font-size:0.8em; color:#333;
 
     function operacheck()
     {
-
+error_reporting (0);
         $str = 0;
         if (!$CI) {
             $CI =& get_instance();
@@ -4774,10 +4774,10 @@ $str = $CI->parser->parse('realt_addtoblacklist', $data, $false);
 <head><meta http-equiv='content-type' content='text/html; charset=utf-8' /><link rel='stylesheet' href='http://neagent.by/themes/neagent_style/assets/css/style.css' type='text/css' media='screen, projection' /></head><body class='popframe'>";
         //////////////////////////////////////	  
         $userLevel = "";
-        if (!$CI) {
+         
             $CI =& get_instance();
             $CI->load->library('parser');
-        }
+         
         $user = $CI->connect->get_current_user();
         if (($user['group']['group_name']) == 'Super Admins') {
             $this->data['mlev'] = 4;
@@ -4806,8 +4806,8 @@ $str = $CI->parser->parse('realt_addtoblacklist', $data, $false);
         $USERIP = $_SERVER["REMOTE_ADDR"];
         $uid = "uid-not-set";
 
-        $aid = $_POST["ad_id"]; // foo bar 
-        $comment = $_POST["comment"]; // baz
+        $aid = isset($_POST["ad_id"])? $_POST["ad_id"]:false; // foo bar 
+        $comment = isset($_POST["comment"])?$_POST["comment"]:false; // baz
 
         $confi = config_item('realt_number_error_mark');
 
@@ -4845,9 +4845,9 @@ $comment = $input_text;
 		
         $ad_id = (int)($CI->uri->segment(4));
 
-        $mode = $_POST['mode'];
-        $screen_name = $_POST['screen_name'];
-        $sn = $_POST['sn'];
+        $mode = isset($_POST['mode'])?$_POST['mode']:false;
+        $screen_name = isset($_POST['screen_name'])?$_POST['screen_name']:false;
+        $sn = isset($_POST['sn'])?$_POST['sn']:false;;
 
 
         switch ($mode) {
@@ -4873,7 +4873,7 @@ $comment = $input_text;
                     return;
                 } else {
 
-
+$screen_name=isset($screen_name)?$screen_name:"";
                     $dat = array(
                         screen_name => $screen_name
                     );
@@ -4890,13 +4890,13 @@ $comment = $input_text;
 
 
                 $data = array(
-                    comment_ad => $aid,
-                    comment_text => $comment,
-                    comment_table => 'ads',
-                    comment_date => $postdate,
-                    comment_uid => $uid,
-                    comment_user => $userid,
-                    comment_state => 0 // только что отправленный, не проверенный и т.п.
+                    'comment_ad' => $aid,
+                    'comment_text' => $comment,
+                    'comment_table' => 'ads',
+                    'comment_date' => $postdate,
+                    'comment_uid' => $uid,
+                    'comment_user' => $userid,
+                    'comment_state' => 0 // только что отправленный, не проверенный и т.п.
                 );
 
 
@@ -4979,6 +4979,8 @@ $header
 
     function ad_options()
     {
+	error_reporting (0);
+	
         //header('Content-type: application/xml; charset=utf-8');
         $header = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml'>
@@ -4987,10 +4989,10 @@ $header
 
         //////////////////////////////////////	  
         $userLevel = "";
-        if (!$CI) {
+       
             $CI =& get_instance();
             $CI->load->library('parser');
-        }
+        
         $user = $CI->connect->get_current_user();
         if (($user['group']['group_name']) == 'Super Admins') {
             $this->data['mlev'] = 4;
@@ -5890,6 +5892,7 @@ return 0;
 
     function _make_filename($filename)
     {
+	error_reporting (0);
         if (strpos($filename, '.') === FALSE) {
             $filename = $this->_getlastfilename();
             return $filename;
@@ -6010,6 +6013,7 @@ return 0;
 
     public function resizePic($f, $newf, $type)
     {
+	error_reporting (0);
 // $type=1;
         //'/home/vabby/www/tolkuchka.by/modules/Board/files/tmp/'
 // $f="/home/vabby/www/tolkuchka.by/modules/Board/files/tmp/00.jpg";

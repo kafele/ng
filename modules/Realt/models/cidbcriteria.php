@@ -666,7 +666,7 @@ $this->withcontent=$withcontent;
 }
 
 
-$postdate=(int)$_GET['postdate'];
+$postdate=isset($_GET['postdate'])? (int)$_GET['postdate'] : false;
 if ($postdate>0){
 $this->postdate=$postdate;
 }

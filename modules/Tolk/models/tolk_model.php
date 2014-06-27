@@ -65,7 +65,7 @@ $params = array(
 $query= $this->getEntries($from, $config['per_page'], $params );
  
 
-$str_add .= $data['pager'];  
+$str_add  = $data['pager'];  
 
 if ($query->num_rows() == 0 )
 			{	
@@ -83,7 +83,7 @@ return;
 foreach ($query->result() as $row)
 {
 
-
+$row->tolkposter_ip=isset($row->tolkposter_ip)?$row->tolkposter_ip:"";
 $tolkdata = array(
             'tolk_message_id' => $row->tolk_message_id,
             'tolk_action' => $row->tolk_action,
@@ -130,7 +130,7 @@ $tolkdata['tolk_action']=" ";
 	   
 	   
 	   
-if ($tolkdata['tolk_poster_id']==1) {
+if (isset($tolkdata['tolk_poster_id']) && $tolkdata['tolk_poster_id']==1) {
 $tolkdata['tolk_image_url'] = 	base_url()."themes/neagent_style/assets/images/gb_admin.png";  
 }
 else{	   
@@ -296,7 +296,7 @@ $paginationConfig=$config;
 public function getReplies($from,$limit,$params){
 $CI =& get_instance();
 $CI->load->library('parser');
-$tolk_cat_id=$params['tolk_cat_id'];
+$tolk_cat_id=isset($params['tolk_cat_id'])?$params['tolk_cat_id']:false;
 $tolk_r_parent=$params['tolk_r_parent'];
 
 

@@ -172,7 +172,7 @@ return;
 
 
 // Если есть данные , выдаем, если нет, то возвращаем ошибку.	 
-if ($CI->realt_model->data['realt']){
+if (isset($CI->realt_model->data['realt'])){
 
 $CI -> data['timeend'] = microtime();
 $t= "<br><small>". ($CI -> data['timeend'] -  $CI -> data['timestart'])   . "</small>";
