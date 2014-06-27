@@ -4439,11 +4439,11 @@ else{
 //////////////////
 
 
-//echo( "00-". $this->data['adform_view']);
+ //echo( "00-". $this->data['adform_view']);
 
                 $addata['phone_verification'] = $this->data['phone_verification'];
 
-
+ 
 if ($this->data['phone_verification'] == 1) {
 // если пользователь зарегистрирован и email подтвержден, то 
 //если нет  -предупреждение
@@ -4501,7 +4501,7 @@ if ($this->data['phone_verification'] == 1) {
 
                 } else {
 
-//echo($this->data['$adform_view']);
+ //echo($this->data['$adform_view']);
 
                     $str_add .= $CI->parser->parse($this->data['adform_view'], $addata);
 
