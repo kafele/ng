@@ -5,7 +5,7 @@
 
 <div id="header"  >
 <table  width="100%" cellpadding=0 cellspacing=0 id="headerins"><tr><td id="hl" width=218px;>
-<a id="topnav-logo" href="default.asp">Неагент</a>
+<a id="topnav-logo" href="http://neagent.by">Неагент</a>
 </td><td >
 <div id="hr">
 <div style="height:150px;background:#62a5d5; width: 100%; "> </div>

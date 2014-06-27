@@ -78,7 +78,7 @@ class Realt_Tags
 public static function index(FTL_Binding $tag)
 {
  
-	 
+	//echo(009); 
  //* Связываемся с CI
 if (!isset($CI)){$CI =& get_instance();$CI->load->library('parser');}	
 $mode = (isset($tag->attr['mode']) ) ? $tag->attr['mode'] : false;
@@ -91,6 +91,7 @@ $CI->load->model('realt_model');
 $contenttype = (isset($tag->attr['type']) ) ? $tag->attr['type'] : false;
 switch ($contenttype) {
 case 'add_form':
+//echo(001);
 $CI->realt_model->getAddFormPage(); // вызываем функцию показа объявлений
 break;
 default:
@@ -103,7 +104,9 @@ $go=$CI->realt_route_model->action;
   switch ($go){
   
   case 'getSingleAd': $CI->realt_model->getSingleAd(); break;
-  case 'getAddFormPage': $CI->realt_model->getAddFormPage(); break;
+  case 'getAddFormPage': 
+  //echo(002);
+  $CI->realt_model->getAddFormPage(); break;
   case 'moderationPage': $CI->realt_model->moderationPage(); break;
   case 'commentsModerationPage': $CI->realt_model->commentsModerationPage(); break;
   case 'verificationPage': $CI->realt_model->verificationPage(); break;
