@@ -1,16 +1,22 @@
-<? if ($mlev=='4'){ ?><script >function to_rubric(obj, id){if  (obj.value>0){window.location.assign("http://neagent.by/realt/to_rubric/" + obj.value + "/" + id)}}; </script> <? } ?>
+<? if (isset($mlev)&&$mlev=='4'){ ?><script >function to_rubric(obj, id){if  (obj.value>0){window.location.assign("http://neagent.by/realt/to_rubric/" + obj.value + "/" + id)}}; </script> <? } ?>
  
 <?
 
- 
-
+ $ad_imgtitle=isset($ad_imgtitle)?$ad_imgtitle:"";
+ $ad_imgalt=isset($ad_imgalt)?$ad_imgalt:"";
+  $ad_isup=isset($ad_isup)?$ad_isup:"";
+  
+  $itemalt=isset($itemalt)?$itemalt:false;
+  
+  
+$mlev=isset($mlev)?$mlev:false;
 if 	($_SERVER["REMOTE_ADDR"]=="212.98.167.242"){
 	$ad_phones="www.neagent.by";
 	//$ad_url=$ad_url . "/?" . $ip;
 }
 
 
-if ($mlev=='4'){	
+if (isset($mlev)&&$mlev=='4'){	
 $cstr = "";
 for ($k = 0; $k < count($this->data['realt_cats']); $k++) {
 $cid = $this->data['realt_cats'][$k]['id'];
@@ -32,7 +38,7 @@ echo(" -->" );
 	if (!$ad_currency){$ad_currency="$";};
 	if ( is_numeric($ad_price)&& $ad_price==0){$ad_price="  ";$ad_currency="";}
 
-
+$ad_type_class=$up_select_class="";
 if ($ad_type==1){
 $ad_type_class=" typevip";
 } 
@@ -40,7 +46,7 @@ if ($ad_type==2){
 $ad_type_class=" typevip2";
 } 
 	
-if ($ad_isup){
+if (isset($ad_isup)){
 $up_select_class=" up";
 }  
  
@@ -50,7 +56,7 @@ $up_select_class=" bl";
 }
  
 	
-if ($single_ad==1){  	
+if (isset($single_ad) && $single_ad==1){  	
 	$ad_message =nl2br($ad_message);
 }else{  	
 
@@ -67,7 +73,7 @@ if ((strlen($ad_message))>400){
 	<tr>
 	<td>
 		<div class="itm_pic" >
-		<a href="<?  if ($mlev==4){?><?=$ad_cref;?><?}else{?><?=$ad_url;?><?}?>"   ><img src="<?=$ad_mainpic;?>" title="<?=$ad_imgtitle;?>" alt="<?=$ad_imgalt;?>" width=36 height=36></a>
+		<a href="<?  if (isset($mlev)&&$mlev==4){?><?=$ad_cref;?><?}else{?><?=$ad_url;?><?}?>"   ><img src="<?=$ad_mainpic;?>" title="<?=$ad_imgtitle;?>" alt="<?=$ad_imgalt;?>" width=36 height=36></a>
 		</div>
 		<div class="itm_street"><?=$ad_street;?></div> 
 		<div><?=$ad_postdate;?><?=$ad_isup;?></div>

@@ -606,11 +606,12 @@ $this->searchparams['ad_city']=$city;
 
 
 
-$k1=$_GET['k1'];
-$k2=$_GET['k2'];
-$k3=$_GET['k3'];
-$k4=$_GET['k4'];
-$k0=$_GET['k0'];
+$k1=isset($_GET['k1'])? $_GET['k1']:false;
+$k2=isset($_GET['k2'])? $_GET['k2']:false;
+$k3=isset($_GET['k3'])? $_GET['k3']:false;
+$k4=isset($_GET['k4'])? $_GET['k4']:false;
+$k5=isset($_GET['k5'])? $_GET['k5']:false;
+$k0=isset($_GET['k0'])? $_GET['k0']:false;
 $k1=($k1=="on")?1:false;
 $k2=($k2=="on")?1:false;
 $k3=($k3=="on")?1:false;
@@ -642,7 +643,7 @@ $this->searchparams['ad_komnat']=$k_arr;
 } 
  
 
-$firstad=$_GET['first'];
+$firstad=isset($_GET['first']) ? $_GET['first'] : 0;
 $this->offset = $firstad;
 
 
@@ -683,10 +684,10 @@ $priceMax = (int)$priceMax;
 // выбираем категорию 
 $formtype=$_GET['formtype'];
 $prtype=$_GET['prtype'];
-$komm_type=$_GET['komm_type'];
+$komm_type=isset($_GET['komm_type'])?$_GET['komm_type']:false ;
 
-$nobject=$_GET['nobject'];
-$type=$_GET['type'];
+$nobject=isset($_GET['nobject'])?$_GET['nobject']:false;
+$type=isset($_GET['type'])?$_GET['type']:false;
 
 
 
@@ -701,7 +702,7 @@ $this->data['debug'] .= "areasArray=" . count($areasArray);
 }
 
 
-
+$str_searched ="";
 
 //и формируем строку
 $str_searched .="показаны ";
@@ -888,7 +889,7 @@ $order="ad_type desc, ad_up_date desc, ad_postdate"; //ORDER BY ad_post_date des
 $ordertype='desc'; 
 
 
-$getorder=$_GET['order'];
+$getorder=isset($_GET['order'])?$_GET['order']:false;
 
 if ($getorder!=false  ){
 if  (strpos($getorder, "_")>1){

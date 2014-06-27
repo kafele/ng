@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>Tolkuchka Module</name>
+	<description>Gives users the ability to write to guestbook</description>
+	<uri_segment>tk</uri_segment>
+	<has_admin>true</has_admin>
+	<access_group>editors</access_group>
+	<email>mail@vab.by</email>
+    <url>http://vab.by</url>
+    <copyright>GNU/GPL License</copyright>
+    <version>0.1.0</version>
+	<database>
+	<table name="tolk" if_not_exists="true" engine="InnoDB"  default_charset="utf8" collate="utf8_unicode_ci" auto_increment="1">
+			<primary_key>tolk_message_id</primary_key>
+			<column name="tolk_message_id" type="int" length="11" attributes="UNSIGNED" zerofill="NOT NULL" auto_increment="true" ></column>
+			<column name="tolk_cat_id" type="int" attributes="UNSIGNED" length="11"  zerofill="NOT NULL"  ></column>
+			<column name="tolk_title" type="varchar" length="255"   zerofill="NOT NULL" default="" ></column>
+			<column name="tolk_message" type="text"    zerofill="NOT NULL" default="" ></column>
+			<column name="tolk_email" type="varchar" length="255"   zerofill="NOT NULL" default="" ></column>
+			<column name="tolk_contactname" type="varchar" length="255"   zerofill="NOT NULL" default="" ></column>
+			<column name="tolk_show" type="int" attributes="UNSIGNED"  length="3"   zerofill="NOT NULL" ></column>
+			<column name="tolk_post_date"  type="varchar" length="50"   zerofill="NULL"  ></column>
+			<column name="tolk_poster_id"  type="varchar" length="100"   zerofill="NULL"  ></column>
+			<column name="tolk_poster_uid"  type="varchar" length="100"   zerofill="NULL"  ></column>
+			<column name="tolk_poster_ip"  type="varchar" length="100"   zerofill="NULL"  ></column>
+			<column name="tolk_fakefor"  type="varchar" length="100"   zerofill="NULL" ></column>
+	</table>
+	<table name="tolk_settings" if_not_exists="true" engine="InnoDB"  default_charset="utf8" collate="utf8_unicode_ci" auto_increment="1">
+			<primary_key>tolks_id</primary_key>
+			<column name="tolks_id" type="int" length="11" attributes="UNSIGNED" zerofill="NOT NULL" auto_increment="true" ></column>
+			<column name="tolks_name" type="varchar" length="255"   zerofill="NOT NULL" default="" ></column>
+			<column name="tolks_value" type="text"    zerofill="NOT NULL" default="" ></column>
+	</table>
+	<table name="tolk_replies" if_not_exists="true" engine="InnoDB"  default_charset="utf8" collate="utf8_unicode_ci" auto_increment="1">
+			<primary_key>tolk_r_message_id</primary_key>
+			<column name="tolk_r_message_id" type="int" length="11" attributes="UNSIGNED" zerofill="NOT NULL" auto_increment="true" ></column>
+			<column name="tolk_r_parent"  type="int" length="11"   zerofill="NOT NULL"  ></column>
+			<column name="tolk_r_cat_id" type="int" attributes="UNSIGNED" length="11"  zerofill="NOT NULL"  ></column>
+			<column name="tolk_r_title" type="varchar" length="255"   zerofill="NULL"  ></column>
+			<column name="tolk_r_message" type="text"    zerofill="NULL" default="" ></column>
+			<column name="tolk_r_email" type="varchar" length="255"   zerofill="NULL" default="" ></column>
+			<column name="tolk_r_contactname" type="varchar" length="255"   zerofill="NULL"  ></column>
+			<column name="tolk_r_show" type="int" attributes="UNSIGNED"  length="3"   zerofill="NOT NULL" ></column>
+			<column name="tolk_r_post_date"  type="varchar" length="50"   zerofill="NULL"  ></column>
+			<column name="tolk_r_poster_id"  type="varchar" length="100"   zerofill="NULL"  ></column>
+			<column name="tolk_r_poster_uid"  type="varchar" length="100"   zerofill="NULL"  ></column>
+			<column name="tolk_r_poster_ip"  type="varchar" length="100"   zerofill="NULL"  ></column>
+			<column name="tolk_r_fakefor"  type="varchar" length="100"   zerofill="NULL"  ></column>
+</table>
+		</database>
+</module>

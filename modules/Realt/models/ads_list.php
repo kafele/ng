@@ -212,7 +212,7 @@ class Ads_list   extends Base_model
 	private function createsortlink($param , $title)
 	{
 	
-	
+	$classstring=$class1=$class2="";
 	
 	$url= "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 	 $url_part = explode("?", $url); // Разбиваем URL на 2 части: до знака ? и после
@@ -226,7 +226,7 @@ class Ads_list   extends Base_model
 	$search_qs2= $this->addorder ($param .'_za');
 	
 	
-$getorder=$_GET['order'];
+$getorder=isset($_GET['order'])? $_GET['order']:false;
 if ($getorder!=false  ){
 if  (strpos($getorder, "_")>1){
 
@@ -501,7 +501,7 @@ $pricesortlink=$this->createSortLink("defprice" , "по цене");
 $komnatsortlink=$this->createSortLink("komnat" , "по кол-ву комнат");
 
 
-
+$str_add="";
 $str_add .='<div class="orderoptions">сортировать: '.$datesortlink. $pricesortlink .$komnatsortlink.'</div>';
 
 

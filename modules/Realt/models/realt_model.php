@@ -788,7 +788,7 @@ $ads=$CI->ad->modelsFromQuery($query);
 		
 		
 		
-		  echo $CI->cidbcriteria->fields;
+		//  echo $CI->cidbcriteria->fields;
 		$CI->cidbcriteria->searchparams['ad_isagent']=0;
 		//$CI->cidbcriteria->
 		
@@ -4941,6 +4941,12 @@ if ($this->data['phone_verification'] == 1) {
 
 function ChkString($fString, $fField_Type)
 { //## Types - name, password, title, message, url, urlpath, email, number, list
+
+if (!is_string($fString)){
+return $fString;
+}
+
+
     $fString = rtrim(trim($fString));
     if ($fString == "") {
         $fString = " ";

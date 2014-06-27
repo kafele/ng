@@ -1,0 +1,58 @@
+
+2014-06-25 13:44:19; uid=20140408140737; uic=39; IP=217.23.127.98; useragent=Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-25 13:45:39; uid=; uic=; IP=217.69.133.246; useragent=Mozilla/5.0 (compatible; Linux x86_64; Mail.RU_Bot/Fast/2.0; +http://go.mail.ru/help/robots); page=/tolk/
+2014-06-25 14:15:53; uid=20140121130209; uic=148; IP=86.57.194.91; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-25 15:06:22; uid=20140529172536; uic=46; IP=81.30.80.79; useragent=Mozilla/5.0 (Windows NT 6.1; rv:29.0) Gecko/20100101 Firefox/29.0; page=/tolk/
+2014-06-25 15:19:00; uid=20140613142134; uic=20; IP=178.124.160.219; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1471.70; page=/tolk/
+2014-06-25 15:19:05; uid=20140613142134; uic=20; IP=178.124.160.219; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1471.70; page=/tolk/
+2014-06-25 16:28:44; uid=20140625160018; uic=4; IP=217.21.60.222; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-25 16:35:58; uid=; uic=; IP=86.57.196.55; useragent=Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko; page=/tolk/
+2014-06-25 16:36:04; uid=; uic=; IP=86.57.196.55; useragent=Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko; page=/tolk/
+2014-06-25 16:36:09; uid=; uic=; IP=86.57.196.55; useragent=Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko; page=/tolk/
+2014-06-25 16:57:16; uid=20140625165711; uic=1; IP=178.124.194.82; useragent=Opera/9.80 (Windows NT 6.1) Presto/2.12.388 Version/12.17; page=/tolk/
+2014-06-25 17:09:56; uid=20140625170834; uic=1; IP=93.84.49.195; useragent=Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-25 17:35:28; uid=20140609193106; uic=134; IP=87.252.227.123; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-25 17:38:35; uid=20140609193106; uic=134; IP=87.252.227.123; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-25 18:48:11; uid=20140625184703; uic=1; IP=37.214.106.238; useragent=Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-25 20:16:24; uid=20140625201616; uic=1; IP=46.53.180.200; useragent=Mozilla/5.0 (Windows NT 6.3; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0; page=/tolk/
+2014-06-25 20:25:11; uid=20140625202219; uic=2; IP=86.57.185.2; useragent=Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B367 Safari/531.21.10; page=/tolk/
+2014-06-25 20:33:31; uid=; uic=; IP=87.252.227.61; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-25 20:37:40; uid=20140625203525; uic=5; IP=128.68.78.213; useragent=Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; ASU2JS; rv:11.0) like Gecko; page=/tolk/
+2014-06-25 21:08:46; uid=20140625205248; uic=8; IP=128.68.78.213; useragent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-25 21:13:22; uid=20140625192526; uic=1; IP=178.124.207.122; useragent=Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0; page=/tolk/
+2014-06-25 21:17:46; uid=20140625192526; uic=1; IP=178.124.207.122; useragent=Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0; page=/tolk/
+2014-06-25 21:24:36; uid=20140625212334; uic=1; IP=178.126.83.107; useragent=Opera/9.80 (Windows NT 5.1) Presto/2.12.388 Version/12.16; page=/tolk/
+2014-06-27 11:33:48; uid=20140627113337; uic=7; IP=86.51.26.11; useragent=Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US); page=/tolk/
+2014-06-27 15:45:33; uid=20140605190403; uic=225; IP=93.85.157.102; useragent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-27 15:52:12; uid=20140627143854; uic=74; IP=86.57.157.171; useragent=Opera/9.80 (Windows NT 6.1) Presto/2.12.388 Version/12.16; page=/tolk/
+2014-06-27 16:02:26; uid=20140627160210; uic=1; IP=185.6.25.158; useragent=Mozilla/5.0 (Linux; U; Android 4.1.1; ru-ru; PAP3540DUO Build/PrestigioPAP3540DUO) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30; page=/tolk/
+2014-06-27 16:13:59; uid=20140531144646; uic=111; IP=178.124.193.1; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1471.70; page=/tolk/
+2014-06-27 16:15:10; uid=20131028125447; uic=4226; IP=86.57.157.171; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36 OPR/20.0.1387.82; page=/tolk/
+2014-06-27 16:18:01; uid=20131028125447; uic=4226; IP=86.57.157.171; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36 OPR/20.0.1387.82; page=/tolk/
+2014-06-27 16:18:23; uid=20140626203705; uic=17; IP=93.85.152.113; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-27 16:19:01; uid=20131028125447; uic=4226; IP=86.57.157.171; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36 OPR/20.0.1387.82; page=/tolk/
+2014-06-27 16:20:03; uid=20131028125447; uic=4226; IP=86.57.157.171; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36 OPR/20.0.1387.82; page=/tolk/
+2014-06-27 16:21:36; uid=20131028125447; uic=4226; IP=86.57.157.171; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36 OPR/20.0.1387.82; page=/tolk/
+2014-06-27 16:22:44; uid=20131028125447; uic=4226; IP=86.57.157.171; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36 OPR/20.0.1387.82; page=/tolk/
+2014-06-27 16:24:15; uid=20131028125447; uic=4226; IP=86.57.157.171; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36 OPR/20.0.1387.82; page=/tolk/
+2014-06-27 16:33:19; uid=20140319113438; uic=348; IP=185.26.182.31; useragent=Opera/9.80 (Windows NT 6.1; WOW64) Presto/2.12.388 Version/12.16; page=/tolk/
+2014-06-27 16:43:36; uid=20140623095001; uic=15; IP=37.17.113.37; useragent=Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-1204232256; U; ru) Presto/2.10.254 Version/12.00; page=/tolk/
+2014-06-27 16:53:03; uid=20131016155618; uic=6; IP=82.209.194.38; useragent=Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; InfoPath.1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729); page=/tolk/
+2014-06-27 16:55:32; uid=20131016155618; uic=6; IP=82.209.194.38; useragent=Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; InfoPath.1; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729); page=/tolk/
+2014-06-27 17:57:12; uid=20140613193415; uic=289; IP=37.17.115.146; useragent=Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1471.70; page=/tolk/
+2014-06-27 18:41:01; uid=; uic=; IP=157.55.39.33; useragent=Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm); page=/tolk/
+2014-06-27 19:27:20; uid=20140627192716; uic=1; IP=93.125.42.71; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-27 19:27:23; uid=20140627192716; uic=1; IP=93.125.42.71; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-27 20:00:32; uid=20140414132531; uic=57; IP=93.171.161.4; useragent=Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 520); page=/tolk/
+2014-06-27 20:00:33; uid=20140414132531; uic=57; IP=93.171.161.4; useragent=Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 520); page=/tolk/
+2014-06-27 20:08:20; uid=20140618200646; uic=30; IP=178.172.232.102; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1471.70 (Edition Yx); page=/tolk/
+2014-06-27 20:08:52; uid=20140618200646; uic=30; IP=178.172.232.102; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 OPR/22.0.1471.70 (Edition Yx); page=/tolk/
+2014-06-27 20:25:28; uid=20130805202334; uic=40; IP=82.145.217.32; useragent=Opera/9.80 (Android; Opera Mini/7.5.33361/35.3088; U; ru) Presto/2.8.119 Version/11.10; page=/tolk/
+2014-06-27 20:28:46; uid=20140602150351; uic=8; IP=46.53.181.2; useragent=Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko; page=/tolk/
+2014-06-27 21:42:08; uid=20140527225801; uic=5; IP=178.124.201.212; useragent=Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0; page=/tolk/
+2014-06-27 21:57:22; uid=20140627191858; uic=18; IP=31.24.90.192; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0; page=/tolk/
+2014-06-27 22:36:18; uid=20140610200746; uic=158; IP=46.53.176.115; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-27 22:45:38; uid=20140627223956; uic=7; IP=93.125.64.150; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-27 22:55:46; uid=20140417232500; uic=24; IP=46.216.116.175; useragent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36; page=/tolk/
+2014-06-27 23:12:38; uid=20140627231205; uic=1; IP=87.252.227.98; useragent=Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 YaBrowser/14.2.1700.12599 Safari/537.36; page=/tolk/
+2014-06-27 23:43:45; uid=20140627143854; uic=233; IP=86.57.157.171; useragent=Opera/9.80 (Windows NT 6.1) Presto/2.12.388 Version/12.16; page=/tolk/

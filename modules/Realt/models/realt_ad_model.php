@@ -219,12 +219,16 @@ if ($mkey =="ad_price"){
 if(is_numeric($this->fields["ad_price_min"])&&	is_numeric($this->fields["ad_price_max"])&&is_numeric($value) ){	
 //echo("000");		
 $realt_currency_rate = config_item('realt_currency_rate');
+$_POST['currency'] = isset($_POST['currency'])? $_POST['currency']:false;
 $ad_currency = chkString($_POST['currency'], "SQLString");
+
 if (!is_numeric($ad_currency)) {
 $ad_currency = 2; // Редактировать. Пока валюта устанавливается в доллары
                 }
+
+
 				
-$this->fields["ad_default_price"] = defaultPrice($ad_currency, $this->fields["ad_price"], $realt_currency_rate); // формируем цену по умолчанию - для поиска 
+$this->fields["ad_default_price"] = defaultPrice($ad_currency, $value, $realt_currency_rate); // формируем цену по умолчанию - для поиска 
 $this->fields["ad_default_price_min"] = defaultPrice($ad_currency, $this->fields["ad_price_min"], $realt_currency_rate);
 $this->fields["ad_default_price_max"] = defaultPrice($ad_currency, $this->fields["ad_price_max"], $realt_currency_rate);				
 }

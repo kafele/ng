@@ -47,6 +47,11 @@ $('#kv_withcontent').height(b_height-el_h);
  
 <? 
 
+$postdate=isset($postdate) ? $postdate:false;
+
+ 
+
+
 
 $sel1=$sel2=$sel3=$sel4="";
 
