@@ -111,10 +111,10 @@ class Realt extends Base_Controller
     {
 //header("Content-Type: application/json"); 
         header("Accept-Charset: utf-8");
-        if (!$CI) {
+        
             $CI =& get_instance();
             $CI->load->library('parser');
-        }
+         
         $user = "";
         $phone = "375297096944";
         $user = 111111;
@@ -906,10 +906,10 @@ echo('перемещено в рубрику ' . $rub . "<br> Заголовок
     {
 //header("Content-Type: application/json"); 
         header("Accept-Charset: utf-8");
-        if (!$CI) {
+         
             $CI =& get_instance();
             $CI->load->library('parser');
-        }
+         
         $user = "";
         $phone = $CI->input->post('phone');
         $user = $CI->input->post('user');
@@ -1192,10 +1192,10 @@ function chkSpam($str)
 
     public function  do_verify_phone()
     {
-        if (!$CI) {
+         
             $CI =& get_instance();
             $CI->load->library('parser');
-        }
+         
 
         $phone = $CI->input->post('phone');
         $phone = getonlydigits($phone);

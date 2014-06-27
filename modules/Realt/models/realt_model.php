@@ -2057,7 +2057,11 @@ $partner_arr=array();
 						
 						
 						
-						include $_SERVER['DOCUMENT_ROOT'] . '/modules/Realt/config/realtcash.php';
+					  include $_SERVER['DOCUMENT_ROOT'] . '/modules/Realt/config/realtcash.php';
+					  
+					 //print_r( $config['realt_cityes_id']);
+					  
+					  
 					  $addata['ad_city'] = getCityName($addata['ad_city'], $config['realt_cityes_id'], $config['realt_cityes_name']);
 					  
 					  
@@ -2389,7 +2393,7 @@ $str_add="";
             case 'post':
             case 'doedit':
 //СОХРАНЕНИЕ ОБЪЯВЛЕНИЯ
-
+	
                 if ($this->data['usemap'] == true) {
 // определяем координаты
 
@@ -2418,7 +2422,9 @@ $str_add="";
                         $ad_city = 1;
                     }
 
+					 include $_SERVER['DOCUMENT_ROOT'] . '/modules/Realt/config/realtcash.php';
                     $gorod = getCityName($ad_city, $config['realt_cityes_id'], $config['realt_cityes_name']);
+				
                     $value = "Беларусь,+" . $gorod . ",+" . $ad_street;
 
                     if ($ad_dom != "") {
@@ -2537,6 +2543,12 @@ $this->login("http://neagent.by/ad-form");
 
 
                 include $_SERVER['DOCUMENT_ROOT'] . '/modules/Realt/config/realtcash.php';
+				
+				// include $_SERVER['DOCUMENT_ROOT'] . '/modules/Realt/config/realtcash.php';
+					  
+				// print_r( $config['realt_cityes_id']);
+				
+				
                 $cityname = getCityName($ad_city, $config['realt_cityes_id'], $config['realt_cityes_name']);
                 $autotitle = generateAutoTitle($table, $ad_catid, $ad_message, $cityname, $ad_street, $ad_subarea);
 
@@ -2634,18 +2646,27 @@ $ad_price_object=0;
 
 //формирует пароль для нового 
                 if ($act == "post") {
+				
+				
                     $ad_secretcode = generate_password(7);
                     if ($this->data['mlev'] == 4) {
 //echo("<br>2-" . (microtime()-$CI -> data['timestart']));
                     }
 /// проверка на уникальность 
-                    $sc_ex = secretCodeExists($code);
+
+                    $sc_ex = secretCodeExists($ad_secretcode);
+					
                     $j = 0;
-                    while ($sc_ex != TRUE) {
+
+                    while ($sc_ex == TRUE ) {
                         $ad_secretcode = generate_password(7);
+						//echo ( $ad_secretcode .  " <br>" );
+						$sc_ex = secretCodeExists($ad_secretcode);
+						//echo ( $sc_ex  .  " <br>" );
                         $j = $j + 1;
                     }
 
+					//echo ( $ad_secretcode  . "55<br>" );
 
                     if ($this->data['mlev'] == 4) {
 //echo("<br>3-" . (microtime()-$CI -> data['timestart']));
@@ -2861,7 +2882,7 @@ putModerateAllAds($CI->data['user_uid']);
                     $digs = (int)$digcount[0];
                     if ($digs > config_item('realt_moderate_max_digits_group')) {
                         $CI->data['scenery_moderate'] = 1;
-                        $CI->data['scenery_descriptions'] = $CI->data['scenery_descriptions'] . " + слишком  много цифр в группе:" . $digs . "  " . $digcount[1];
+                        $CI->data['scenery_descriptions'] = $CI->data['scenery_descriptions'] . " + слишком  много цифр в группе:" . $digs . "  " . $digcount;
                     }
                 }
 ////////////////////////
@@ -2907,7 +2928,7 @@ $CI->data['scenery_moderate'] = 0;
                 $ad_uic = (int)$_COOKIE["uic"];
                 $ad_cref = $CI->data['user_cref'];
                 $ad_ip = $_SERVER["REMOTE_ADDR"];
-                $ad_evc1 = $_COOKIE["evc"];
+                $ad_evc1 = isset($_COOKIE["evc"]) ? $_COOKIE["evc"] : "";
                 $ad_evc = chkString($CI->input->post('evc'), "SQLString");
 
 
@@ -3251,7 +3272,7 @@ $CI->data['scenery_moderate'] = 0;
                     }
 
 
-                    if ($thisPhoneChecked == true) {
+                    if (isset($thisPhoneChecked ) && $thisPhoneChecked == true) {
                         $ad_phones = $ad_phones . " <small style='color:#5baf3a; font-weight:normal;'>тел. подтвержден.</small>";
                     }
 
@@ -3297,56 +3318,56 @@ $CI->email->send();
 // Сохранение объявления 
 // ВСТАВКА В БАЗУ  ads   и сохранение картинок
                     $data = array(
-                        ad_catid => $ad_catid,
-                        ad_title => $ad_title,
-                        ad_message => $ad_message,
-                        ad_komnat => $ad_komnat,
-                        ad_komnat_min => $ad_komnat_min,
-                        ad_komnat_max => $ad_komnat_max,
+                        'ad_catid' => $ad_catid,
+                        'ad_title' => $ad_title,
+                        'ad_message' => $ad_message,
+                        'ad_komnat' => $ad_komnat,
+                        'ad_komnat_min' => $ad_komnat_min,
+                        'ad_komnat_max' => $ad_komnat_max,
 
 
-                        ad_price => $ad_price,
-                        ad_price_min => $ad_price_min,
-                        ad_price_max => $ad_price_max,
-						ad_price_object => $ad_price_object,
-                        ad_currency => $ad_currency,
-                        ad_default_price => $ad_default_price,
-                        ad_default_price_min => $ad_default_price_min,
-                        ad_default_price_max => $ad_default_price_max,
-                        ad_postdate => $ad_postdate,
-                        ad_firstdate => $ad_postdate,
-                        ad_enddate => $ad_enddate,
-                        ad_email => $ad_email,
-                        ad_contactname => $ad_contactname,
-                        ad_phones => $ad_phones,
-                        ad_show => $ad_show,
-                        ad_ip => $ad_ip,
-                        ad_uid => $ad_uid,
-                        ad_uic => $ad_uic,
-                        ad_evc => $ad_evc,
-                        ad_cref => $ad_cref,
-                        ad_hideemail => $ad_hideemail,
-                        ad_street => $ad_street,
-                        ad_dom => $ad_dom,
-                        ad_korpus => $ad_korpus,
-						ad_etazh => $ad_etazh,
-						ad_etazhej => $ad_etazhej,
-						ad_pl_o => $ad_pl_o,
-						ad_pl_z => $ad_pl_z,
-						ad_pl_k => $ad_pl_k,
-                        ad_area => $ad_area,
-                        ad_subarea => $ad_subarea,
-                        ad_city => $ad_city,
-                        ad_pictures => $images,
-                        ad_secretcode => $ad_secretcode,
-                        ad_url => $ad_url,
-                        ad_showpolitic => $ad_showpolitic,
-                        longitude => $longitude,
-                        latitude => $latitude,
-                        ad_komm_type => $ad_komm_type,
+                        'ad_price' => $ad_price,
+                        'ad_price_min' => $ad_price_min,
+                        'ad_price_max' => $ad_price_max,
+						'ad_price_object' => $ad_price_object,
+                        'ad_currency' => $ad_currency,
+                        'ad_default_price' => $ad_default_price,
+                        'ad_default_price_min' => $ad_default_price_min,
+                        'ad_default_price_max' => $ad_default_price_max,
+                        'ad_postdate' => $ad_postdate,
+                        'ad_firstdate' => $ad_postdate,
+                        'ad_enddate' => $ad_enddate,
+                        'ad_email' => $ad_email,
+                        'ad_contactname' => $ad_contactname,
+                        'ad_phones' => $ad_phones,
+                        'ad_show' => $ad_show,
+                        'ad_ip' => $ad_ip,
+                        'ad_uid' => $ad_uid,
+                        'ad_uic' => $ad_uic,
+                        'ad_evc' => $ad_evc,
+                        'ad_cref' => $ad_cref,
+                        'ad_hideemail' => $ad_hideemail,
+                        'ad_street' => $ad_street,
+                        'ad_dom' => $ad_dom,
+                        'ad_korpus' => $ad_korpus,
+						'ad_etazh' => $ad_etazh,
+						'ad_etazhej' => $ad_etazhej,
+						'ad_pl_o' => $ad_pl_o,
+						'ad_pl_z' => $ad_pl_z,
+						'ad_pl_k' => $ad_pl_k,
+                        'ad_area' => $ad_area,
+                        'ad_subarea' => $ad_subarea,
+                        'ad_city' => $ad_city,
+                        'ad_pictures' => $images,
+                        'ad_secretcode' => $ad_secretcode,
+                        'ad_url' => $ad_url,
+                        'ad_showpolitic' => $ad_showpolitic,
+                        'longitude' => $longitude,
+                        'latitude' => $latitude,
+                        'ad_komm_type' => $ad_komm_type,
  
-                        ad_srok => $ad_srok,
-						ad_user => $this->user['id_user']
+                        'ad_srok' => $ad_srok,
+						'ad_user' => $this->user['id_user']
 
 
 
@@ -3386,7 +3407,7 @@ $CI->email->send();
                         $CI->email->from('dakh@mail.ru');
                         $CI->email->to('dakh@mail.ru');
                         $CI->email->subject('Сценарий - moderate ' . $CI->data['scenery_descriptions']);
-                        $CI->email->message('moderate=' . $spwords[$i] . ";  " . $str . "; uid=" . $CI->data['user_uid'] . " " . "http://neagent.by/board/uid/" . $CI->data['user_uid'] . " ссылка для допуска http://neagent.by/realt/ad_approve/");
+                        $CI->email->message('moderate=' .  "; uid=" . $CI->data['user_uid'] . " " . "http://neagent.by/board/uid/" . $CI->data['user_uid'] . " ссылка для допуска http://neagent.by/realt/ad_approve/");
                         $CI->email->send();
                     }
 
@@ -3462,7 +3483,7 @@ else{
 					
 
                     if ($CI->data['scenery_moderate'] == 1) {
-                        $data2 = array(ad_id => $last_id, description => $CI->data['scenery_descriptions']);
+                        $data2 = array('ad_id' => $last_id, 'description' => $CI->data['scenery_descriptions']);
                         $CI->db->insert('realt_ad_description', $data2);
                     }
 
@@ -3641,6 +3662,10 @@ else{
                                 $ad_fullurl = "http://neagent.by/sdayu/" . $ad_url;
                         }
 
+						
+						$data['scenery_moderate']= isset($data['scenery_moderate'])?$data['scenery_moderate']:0;
+						
+						
                         $letterdata = array(
                             'secret_code' => $ad_secretcode,
                             'ad_moderate' => $data['scenery_moderate'],
@@ -5133,7 +5158,7 @@ function generateAutoTitle($table, $cat, $str, $city, $street, $subarea)
 
     }
 
-
+$st ="";
     if (strlen($street) > 3) {
         $st = " " . $street . " ";
     } else {
@@ -5283,7 +5308,7 @@ function randonPhraze($phraze)
 {
     if (strpos($phraze, "|")) {
         $phrazeArr = split("\|", $phraze);
-        $r = rand(0, count($phrazeArr));
+        $r = rand(0, count($phrazeArr)-1);
         return ($phrazeArr[$r]);
     } else {
         return $phraze;
@@ -5472,6 +5497,8 @@ function generate_password($number)
         $index = rand(0, count($arr) - 1); // Вычисляем случайный индекс массива
         $pass .= $arr[$index];
     }
+	//echo("mp" .$pass );
+	
     return $pass;
 }
 
@@ -5484,8 +5511,10 @@ function secretCodeExists($code)
     $co = $CI->db->count_all_results();
     if ($co > 0) {
         return TRUE;
+		
     } else {
         return FALSE;
+		
     }
 }
 
