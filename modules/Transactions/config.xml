@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>Transactions Module</name>
+	<description>Transactions</description>
+	<uri_segment>billing</uri_segment>
+	<has_admin>true</has_admin>
+	<access_group>editors</access_group>
+ 
+</module>
