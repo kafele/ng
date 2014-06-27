@@ -365,6 +365,7 @@ if(isset($config['sutki_vip_ads'])){
 
     public function getRegionsPage()
     {
+	$CI =& get_instance();
         $this->load->helper('realt');
         $region =  $CI->city_model->cityID;
             $addata = array(
@@ -467,10 +468,10 @@ $this->data['meta_keywords'] = $subcats[$subcatindex]['meta_keywords']; //$data[
 
     public function setCity($cityid)
     {
-        if (!$CI) {
+         
             $CI =& get_instance();
             $CI->load->library('parser');
-        }
+         
         include $_SERVER['DOCUMENT_ROOT'] . '/modules/Realt/config/realtcash.php';
         $this->data['cityid'] = $cityid;
 //echo("dd" . $this->data['cityid']);
@@ -949,7 +950,7 @@ $str_add = str_replace("<!-- SEARCHDATA -->", $str_searched, $str_add);
 
                 // echo(" ".$this->data['base_url']." ");
 
-                if ($CI->data['segment_city']) { // если есть город в сегменте 
+                if (isset( $CI->data['segment_city'])) { // если есть город в сегменте 
                     $config['uri_segment'] = 5;
 
                     $config['base_url'] = $this->data['base_url']; //

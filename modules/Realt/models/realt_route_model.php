@@ -378,7 +378,7 @@ $this->action = 'accessPage';
             break;
 
             case "board/regions":
-            if ($this->data['newregion'] != 1) {
+            if (isset($this->data['newregion']) && $this->data['newregion'] != 1) {
             $this->action = 'getRegionsPage';
             return;
             }

@@ -3992,10 +3992,10 @@ if ($_SERVER["REMOTE_ADDR"] =='218.108.170.169'){
 	
 	//echo('st');
 // заполняет  mycash - activeuid 
-        if (!$CI) {
+         
             $CI =& get_instance();
             $CI->load->library('parser');
-        }
+         
         $user = $CI->connect->get_current_user();
         if (($user['group']['group_name']) == 'Super Admins') {
             $this->data['mlev'] = 4;
@@ -4202,13 +4202,13 @@ if ($_SERVER["REMOTE_ADDR"] =='218.108.170.169'){
     function complaint()
     {
         header('Content-type: application/xml; charset=utf-8');
-
+error_reporting (0); 
         //////////////////////////////////////	  
         $userLevel = "";
-        if (!$CI) {
+        
             $CI =& get_instance();
             $CI->load->library('parser');
-        }
+         
         $user = $CI->connect->get_current_user();
         if (($user['group']['group_name']) == 'Super Admins') {
             $this->data['mlev'] = 4;
@@ -4222,13 +4222,13 @@ if ($_SERVER["REMOTE_ADDR"] =='218.108.170.169'){
 
         $ref = $_SERVER["HTTP_REFERER"];
         $USERIP = $_SERVER["REMOTE_ADDR"];
-        $uid = $_COOKIE["uid"]; // это не то же  чт ов стат модели!! не присваивает, только читает
-        $c_autor_type = $_COOKIE["IUser"];
+        $uid = isset($_COOKIE["uid"]) ? $_COOKIE["uid"] :""; // это не то же  чт ов стат модели!! не присваивает, только читает
+        $c_autor_type = isset($_COOKIE["IUser"]) ? $_COOKIE["IUser"] : "";
 
 
         $aid = $_POST["aid"]; // foo bar 
         $complaint = $_POST["complaint"]; // baz
-        $mtext = $_POST['report'];
+        $mtext = isset($_POST['report']) ? $_POST['report']: "";
         $ajax = $_POST['ajax'];
 
 
@@ -4458,7 +4458,7 @@ if ($_SERVER["REMOTE_ADDR"] =='218.108.170.169'){
 //header('Content-Type: text/html; charset=windows-1251', TRUE);
         $ad_postdate = date("Y-m-d H:i:s");
         $data = $_POST['data'];
-        $adid = $_POST['adid'];
+        $adid = isset($_POST['adid']) ? $_POST['adid'] : "";
         $phones = base64_decode($data);
         if (strpos($phones, "втор скрыл") > -1) {
             echo $phones;
@@ -4468,7 +4468,7 @@ if ($_SERVER["REMOTE_ADDR"] =='218.108.170.169'){
 		
 	//////////////////	
 $mdata['ad_id'] = $adid;
-$mdata['cat_id'] = $catid?$catid:0;
+$mdata['cat_id'] = isset($catid)?$catid:0;
 $mdata['date'] = date("Y-m-d H:i:s");
 $mdata['user_id'] =(int)$user['id_user'];
 $CI->db->insert('realt_phones_views', $mdata);
@@ -5557,6 +5557,7 @@ return 0;
 
     function upload($adtype)
     {
+	error_reporting (0);
         // Upload folder
         //echo ($adtype);	 exit;
         $CI =& get_instance();
